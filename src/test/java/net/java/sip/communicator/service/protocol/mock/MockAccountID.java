@@ -22,9 +22,9 @@ import net.java.sip.communicator.service.protocol.*;
 import java.util.*;
 
 /**
- * Mock <tt>AccountID</tt> for testing purposes.
- *
- * @author Pawel Domas
+ * Extends AccountID and creates an account ID for a provider user ID and account
+ * properties, loading the account value from the account properties to prevent
+ * changing the account UID when the server changes.
  */
 public class MockAccountID
     extends AccountID
